@@ -1,0 +1,13 @@
+lbl1	LOAD_A #4
+	LOAD_B #7	
+	ADD_B
+	MUL_B
+	PUSH_A
+	POP_B
+	NOP
+	JMP lbl2
+	LOAD_B #20
+	
+lbl2	LOAD_B #16
+	MUL_B
+	JUMP_Z lbl1
